@@ -1,0 +1,8 @@
+<form method="POST" action="">
+  {{ note_form.hidden_tag() }}
+    {{ note_form.note(placeholder = "Note") }}
+    {{ note_form.boolean() }}
+    {{ note_form.float(placeholder = "Float") }}
+    {{ note_form.date()}}
+    {{ note_form.submit() }}
+</form>
