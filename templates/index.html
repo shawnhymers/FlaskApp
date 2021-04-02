@@ -5,6 +5,10 @@
     <title></title>
   </head>
   <body>
-    <p>Hello, World (But with HTML)!</p>
+      {% if current_user.is_authenticated %}
+        {% include 'views/authenticated.html' %}
+      {% else %}
+        {% include 'views/unauthenticated.html' %}
+      {% endif %}
   </body>
 </html>
