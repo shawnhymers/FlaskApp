@@ -1,0 +1,16 @@
+
+<form method="POST" action="">
+  {{ register_form.hidden_tag() }}
+    {{ register_form.username( placeholder = "Username") }}
+    {{ register_form.email( placeholder = "Email") }}
+    {{ register_form.password( placeholder = "Password") }}
+    {{ register_form.confirm_password( placeholder = "Confirm Password") }}
+    {{ register_form.submit() }}
+</form>
+
+<form method="POST" action="">
+  {{ login_form.hidden_tag() }}
+    {{ login_form.email(placeholder = "Email") }}
+    {{ login_form.password(placeholder = "Password") }}
+    {{ login_form.submit() }}
+</form>
