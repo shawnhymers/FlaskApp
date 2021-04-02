@@ -1,0 +1,10 @@
+<div>
+  {% for note in notes %}
+    {{note.note}}
+    {{note.boolean}}
+    {{note.float}}
+    {{note.date}}
+    {% include 'forms/delete/note.html' %}
+    {% include 'forms/update/note.html' %}
+  {% endfor %}
+</div>
