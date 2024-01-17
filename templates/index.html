@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      {% if current_user.is_authenticated %}
+        {% include 'views/authenticated.html' %}
+      {% else %}
+        {% include 'views/unauthenticated.html' %}
+      {% endif %}
+  </body>
+</html>
